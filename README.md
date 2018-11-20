@@ -11,13 +11,41 @@ The project has the following dependencies (from Udacity's sample project):
 2. make >= 4.1
 3. gcc/g++ >= 5.4
 4. Udacity's simulator [Link](https://github.com/udacity/self-driving-car-sim/releases/)
-For instructions on how to install these components on different operating systems, please visit Udacity's sample project (link)(https://github.com/udacity/CarND-Extended-Kalman-Filter-Project). 
 
-1. mkdir build
-2. cd build
-3. cmake ..
-4. make
-5. ./ExtendedKF
+For instructions on how to install these components on different operating systems, please visit Udacity's sample project [Link](https://github.com/udacity/CarND-Extended-Kalman-Filter-Project)
+
+## Compiling and executing the project
+
+These are the suggested steps (From the root of the repo):
+1. mkdir build && cd build
+2. cmake .. && make
+3. ./ExtendedKF
+4. Then start Simulator
+
+The output should be:
+
+```
+Listening to port 4567
+Connected!!!
+```
+
+## Running the Filter
+
+The simulator provides two datasets. The difference between them are:
+
+1. The direction the car (the object) is moving.
+2. The order the first measurement which is sent to the EKF. In dataset 1, the LIDAR measurement is sent first. In the dataset 2, the RADAR measurement is sent first.
+
+This is how my output looks like for the two datasets:
+
+[Dataset1 Output Video](https://github.com/AllenMendes/Extended-Kalman-Filter-Sensor-Fusion-for-Radar-and-Lidar-Data/blob/master/Dataset%201%20output_Extended_Kalman_Filter.mp4)
+
+![image1](https://github.com/AllenMendes/Extended-Kalman-Filter-Sensor-Fusion-for-Radar-and-Lidar-Data/blob/master/Dataset%201.JPG)
+
+[Dataset2 Output Video](https://github.com/AllenMendes/Extended-Kalman-Filter-Sensor-Fusion-for-Radar-and-Lidar-Data/blob/master/Dataset%202%20output_Extended_Kalman_Filter.mp4)
+
+![image2](https://github.com/AllenMendes/Extended-Kalman-Filter-Sensor-Fusion-for-Radar-and-Lidar-Data/blob/master/Dataset%202.JPG)
+
 
 Tips for setting up your environment can be found [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/23d376c7-0195-4276-bdf0-e02f1f3c665d)
 
