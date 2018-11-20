@@ -48,9 +48,10 @@ This is how my output looks like for the two datasets:
 
 ## Code Explaination
 
-1. ***Accuracy - px, py, vx, vy output coordinates must have an RMSE <= [.11, .11, 0.52, 0.52] when using the file: "obj_pose-laser-radar-synthetic-input.txt" which is the same data file the simulator uses for Dataset 1***
+***Accuracy - px, py, vx, vy output coordinates must have an RMSE <= [.11, .11, 0.52, 0.52] when using the file: "obj_pose-laser-radar-synthetic-input.txt" which is the same data file the simulator uses for Dataset 1***
 
 The EKF accuracy was:
+
 Dataset 1 : RMSE <= [0.0973, 0.0855, 0.4513, 0.4399]
 Dataset 2 : RMSE <= [0.1195, 0.0996, 0.5564, 0.5171]
 
