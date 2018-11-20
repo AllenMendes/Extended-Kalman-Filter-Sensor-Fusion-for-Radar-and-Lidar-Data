@@ -2,9 +2,16 @@
 
 ## Overview
 
-This project consists of implementing a sensor fusion software using Extended Kalman Filter (EKF) programmed in C++. AUdacity provided a simulator which generates noisy RADAR and LIDAR measurements of the position and velocity of an object, and the Extended Kalman Filter (EKF) must fuse those measurements to predict the position of the object. The communication between the simulator and the EKF is done using WebSocket using the uWebSockets implementation on the EKF side. To get this project started, Udacity provides a seed project that could be found [here](https://github.com/udacity/CarND-Extended-Kalman-Filter-Project).
+This project consists of implementing a sensor fusion software using Extended Kalman Filter (EKF) programmed in C++. Udacity provided a simulator which generates noisy RADAR and LIDAR measurements of the position and velocity of an object, and the Extended Kalman Filter (EKF) must fuse those measurements to predict the position of the object. The communication between the simulator and the EKF is done using WebSocket using the uWebSockets implementation on the EKF side. To get this project started, Udacity provides a sample project that could be found [here](https://github.com/udacity/CarND-Extended-Kalman-Filter-Project).
 
-Once the install for uWebSocketIO is complete, the main program can be built and run by doing the following from the project top directory.
+ ## Prerequisites
+The project has the following dependencies (from Udacity's sample project):
+
+1. cmake >= 3.5
+2. make >= 4.1
+3. gcc/g++ >= 5.4
+4. Udacity's simulator [Link](https://github.com/udacity/self-driving-car-sim/releases/)
+For instructions on how to install these components on different operating systems, please visit Udacity's sample project (link)(https://github.com/udacity/CarND-Extended-Kalman-Filter-Project). 
 
 1. mkdir build
 2. cd build
