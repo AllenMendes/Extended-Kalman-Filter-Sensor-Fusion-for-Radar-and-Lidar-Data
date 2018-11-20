@@ -52,7 +52,29 @@ This is how my output looks like for the two datasets:
 
 The EKF accuracy was:
 
-Dataset 1 : RMSE <= [0.0973, 0.0855, 0.4513, 0.4399]
-Dataset 2 : RMSE <= [0.1195, 0.0996, 0.5564, 0.5171]
+1. Dataset 1 : RMSE <= [0.0973, 0.0855, 0.4513, 0.4399]
+2. Dataset 2 : RMSE <= [0.1195, 0.0996, 0.5564, 0.5171]
+
+***Your Sensor Fusion algorithm follows the general processing flow as taught in the preceding lessons***
+
+The Kalman filter implementation can be found in [src/kalman_filter.cpp](https://github.com/AllenMendes/Extended-Kalman-Filter-Sensor-Fusion-for-Radar-and-Lidar-Data/blob/master/src/kalman_filter.cpp) and all the prediction function are in [src/FusionEKF.cpp](https://github.com/AllenMendes/Extended-Kalman-Filter-Sensor-Fusion-for-Radar-and-Lidar-Data/blob/master/src/FusionEKF.cpp)
+
+***Your Kalman Filter algorithm handles the first measurements appropriately***
+I have a simple IF statement to check if the first measurement is from a Radar or Lidar sensor in [src/FusionEKF.cpp](https://github.com/AllenMendes/Extended-Kalman-Filter-Sensor-Fusion-for-Radar-and-Lidar-Data/blob/master/src/FusionEKF.cpp) from line 72 to line 106
+
+***Your Kalman Filter algorithm first predicts then updates***
+I predict the next state in [src/FusionEKF.cpp](https://github.com/AllenMendes/Extended-Kalman-Filter-Sensor-Fusion-for-Radar-and-Lidar-Data/blob/master/src/FusionEKF.cpp) at line 147 and then perform the update operation from line 159 onwards in the same file
+
+***Your Kalman Filter can handle radar and lidar measurements***
+
+In [src/FusionEKF.cpp](https://github.com/AllenMendes/Extended-Kalman-Filter-Sensor-Fusion-for-Radar-and-Lidar-Data/blob/master/src/FusionEKF.cpp):
+
+Radar measurements are handled by code from line 72 to 92
+Lidar measurements are handled by code from line 93 to 106
+
+***Your algorithm should avoid unnecessary calculations***
+
+Again in [src/FusionEKF.cpp](https://github.com/AllenMendes/Extended-Kalman-Filter-Sensor-Fusion-for-Radar-and-Lidar-Data/blob/master/src/FusionEKF.cpp), I calculate the Q matrix to make my code robust towards noise from lines 321 to 144.
+
 
 
