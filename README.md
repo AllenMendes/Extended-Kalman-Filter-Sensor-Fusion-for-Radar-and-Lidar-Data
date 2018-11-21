@@ -71,8 +71,8 @@ I predict the next state in [src/FusionEKF.cpp](https://github.com/AllenMendes/E
 
 In [src/FusionEKF.cpp](https://github.com/AllenMendes/Extended-Kalman-Filter-Sensor-Fusion-for-Radar-and-Lidar-Data/blob/master/src/FusionEKF.cpp):
 
--Radar measurements are handled by code from line 72 to 92
--Lidar measurements are handled by code from line 93 to 106
+- Radar measurements are handled by code from line 72 to 92
+- Lidar measurements are handled by code from line 93 to 106
 
 ***Your algorithm should avoid unnecessary calculations***
 
